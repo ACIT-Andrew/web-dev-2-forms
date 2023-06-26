@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <title>Sign Up Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles.css"/>
+    <script src="javascript/index.js" defer></script>
   </head>
   <body>
     <main class="form-container">
@@ -87,10 +91,12 @@
             </optgroup>
             <!-- Other -->
             <optgroup label="Other">
-              <option value="Magic">Magic!</option>
-              <option value="Other">Other...</option>
+              <option value="Magic!">Magic!</option>
+              <option value="Other">Other</option>
             </optgroup>
           </select>
+          <label class="mystery" for="mystery">Who is the lobster?</label>
+          <input class="mystery" type="text" name="mystery">
           <label for="comments">Comments</label>
           <textarea
             name="comments"

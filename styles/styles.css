@@ -84,6 +84,7 @@ legend {
   background-color: #5fcf80;
   padding: 8px;
   width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   margin: 5px;
 }
@@ -104,7 +105,16 @@ label {
 }
 
 /* INPUT, TEXTBOXES, SELECT */
-#--account-info input, textarea{
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #57ccf1;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+textarea{
   display: block;
   background-color: #e8eeef;
   border: 0;
@@ -126,6 +136,10 @@ label {
   color: #9ca8b0;
   border: 0;
   width: 100%;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+#--other input {
   height: 2rem;
   margin-bottom: 1rem;
 }
