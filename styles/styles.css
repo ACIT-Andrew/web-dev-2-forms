@@ -98,9 +98,12 @@ label {
   font-weight: 600;
 }
 
-#--account-info label,
-#--other label {
-  display: block;
+#--account-info label{
+  display: none;
+}
+
+#--experience label {
+  margin-right: 1rem;  
 }
 
 /* INPUT, TEXTBOXES, SELECT */
@@ -121,14 +124,10 @@ textarea {
   border-radius: 3px;
   width: 100%;
 }
-#--account-info input {
-  height: 2.5rem;
-  margin-bottom: 1rem;
-}
 
-#--dev-skills label,
-#--experience label {
-  margin-right: 1rem;
+#--account-info input{
+  height: 2rem;
+  margin-bottom: 3px;
 }
 
 #--other select {
