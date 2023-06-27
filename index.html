@@ -10,8 +10,12 @@
       rel="stylesheet"
     />
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/styles.css"/>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.js"
+      integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
     <script src="javascript/index.js" defer></script>
   </head>
   <body>
@@ -21,27 +25,60 @@
         <fieldset id="--account-info">
           <legend><span class="number">1</span>Account Info</legend>
           <label for="name">Name: </label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full name..."
+            required
+          />
 
           <label for="email">Email: </label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address..."
+            required
+          />
 
           <label for="password">Password:</label>
           <!--Input Type Password will mask user Input-->
-          <input type="password" id="password" name="password" required />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password... min 8 chars"
+            required
+          />
         </fieldset>
 
         <fieldset id="--dev-skills">
           <legend><span class="number">2</span>Dev Skills</legend>
           <label class="standalone">Programming Languages</label>
-          <input type="checkbox" name="html" id="html" value="html" />
-          <label for="html">HTML</label>
-          <input type="checkbox" name="css" id="css" value="css" />
-          <label for="css">CSS</label>
-          <input type="checkbox" name="js" id="js" value="js" />
-          <label for="js">JavaScript</label>
-          <input type="checkbox" name="php" id="php" value="php" />
-          <label for="php">PHP</label>
+          <div class="grid">
+            <input type="checkbox" name="html" id="html" value="html" />
+            <label for="html">HTML</label>
+            <input type="checkbox" name="css" id="css" value="css" />
+            <label for="css">CSS</label>
+            <input type="checkbox" name="sass" id="sass" value="sass" />
+            <label for="sass">Sass</label>
+            <input type="checkbox" name="js" id="js" value="js" />
+            <label for="js">JavaScript</label>
+            <input type="checkbox" name="php" id="php" value="php" />
+            <label for="php">PHP</label>
+            <input type="checkbox" name="python" id="python" value="python" />
+            <label for="python">Python</label>
+          </div>
+          <label class="standalone">Dev Ops</label>
+          <div class="grid">
+            <input type="checkbox" name="git" id="git" value="git">
+            <label for="git">GIT</label>
+            <input type="checkbox" name="gulp" id="gulp">
+            <label for="gulp">Gulp</label>
+            <input type="checkbox" name="webpack" id="webpack">
+            <label for="webpack">Webpack</label>
+          </div>
         </fieldset>
         <fieldset id="--experience">
           <legend><span class="number">3</span>Experience</legend>
@@ -96,7 +133,7 @@
             </optgroup>
           </select>
           <label class="mystery" for="mystery">Who is the lobster?</label>
-          <input class="mystery" type="text" name="mystery">
+          <input class="mystery" type="text" name="mystery" />
           <label for="comments">Comments</label>
           <textarea
             name="comments"
