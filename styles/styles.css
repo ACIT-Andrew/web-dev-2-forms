@@ -124,10 +124,9 @@ textarea {
   border-radius: 3px;
   width: 100%;
 }
-
-#--account-info input{
-  height: 2rem;
-  margin-bottom: 3px;
+#--account-info input {
+  height: 3rem;
+  margin-bottom: 1rem;
 }
 
 #--other select {
