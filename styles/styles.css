@@ -122,13 +122,8 @@ textarea {
   width: 100%;
 }
 #--account-info input {
-  height: 2.5rem;
+  height: 3rem;
   margin-bottom: 1rem;
-}
-
-#--dev-skills label,
-#--experience label {
-  margin-right: 1rem;
 }
 
 #--other select {
